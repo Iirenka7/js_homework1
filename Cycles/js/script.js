@@ -1,22 +1,41 @@
 "use strict"
 // Цикли
 //while - спочатку думаємо - потім робимо
-/*let i = 0;
-while (i < 3) {
-    console.log('i= ' + i++);
-}*/
+
+// let i = 0;
+// while (i < 3) {
+//     console.log(('i= ' +i + ' then i = ') + (i= i + 1));
+// }
 
 
 // Пару слів про "локальні" змінні
-/*let local = "Зовнішня змінна";
+
+//  let local = "Зовнішня змінна";
 var i = 5;
-while (i) {
-    i--;
-    let local = "внутрішня змінна";
-    console.log("всередині циклу local=\"" + local + "\"");
+while (i !=0) {
+    i = i -1 ;
+    let numic = i;
+    console.log("всередині циклу numic=\"" + numic + "\"");
 }
-console.log("Після закінчення циклу i =" + i);
-console.log("А змінна local=\"" + local + "\"");*/
+// console.log("Після закінчення циклу i =" + i);
+// console.log("А змінна local=\"" + local + "\"");*/
+
+for (let i = 1; i <6 ; i = i +1 ) {
+    console.log (i)
+}
+// let i = 5;
+// while (i != 0) {
+   
+//     let start = 'i = '
+//     let end = ' then i = '
+//    console.log(start + i + end +  (i = i -1));
+// }
+
+// let i = 0;
+// while (i < 3) {
+//    console.log(('i= ' +i + ' then i = ') + (i= i + 1));
+// }
+
 
 //Цикл while може закінчитися, так і не розпочавшись
 /*while(false){
@@ -59,6 +78,34 @@ for (var i = 3, j = "hello"; i > 0; j += "+") {
 }
 console.log("Після закінчення циклу i = " + i);
 console.log("Після закінчення циклу j = " + j);*/
+
+// var j;
+// for (var i = 1, j = "hello"; i < 10; j += "*") {
+//     alert('Зворотній відлік. лічильник циклу i=' + i);
+//     i = i +1;
+// }
+// { alert("Після закінчення циклу i = " + i);
+// alert("Після закінчення циклу j = " + j)
+// }
+
+let height = 5;
+let symbol = '*';
+
+for (let i = 1; i <=5; i = i +1) {
+    let row = '';
+    for (let j = 1; j <= i; j++) {
+        row += symbol;
+    }
+    console.log(row);
+
+    let height = 5;
+    let symbol = '*';
+    let row = 2;
+    
+    for (let i = 1; i <= height; i++) {
+        row += symbol; // Добавляем символ к строке
+        console.log(row); // Выводим строку
+    }
 
 //Вот тут нам пригодится локальная переменная:
 /*for (var x = 0; x < 5; x++) {
