@@ -1,0 +1,12 @@
+function myIsNaN(value) {
+    // Перевіряємо, чи є вхідне значення рівним самому собі.
+    // Якщо воно не рівне самому собі і тип дорівнює "number",
+    // то воно є NaN.
+    return value !== value && typeof value === 'number';
+}
+
+// Приклад використання
+console.log(myIsNaN(NaN)); // Поверне true
+console.log(myIsNaN("NaN")); // Поверне false
+console.log(myIsNaN("abc")); // Поверне false
+console.log(myIsNaN(123)); // Поверне false
