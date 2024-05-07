@@ -1,0 +1,21 @@
+const obj = {
+    name: 'John',
+    age: 30,
+    city: 'New York',
+    getInfo: function() {
+        for (let key in this) {
+            if (Object.prototype.hasOwnProperty.call(this, key)) {
+                console.log(`${key}: ${this[key]}`);
+            }
+        }
+    }
+};
+
+// Виведе всі властивості об'єкта
+obj.getInfo();
+
+// Додамо нову властивість
+obj.newProperty = 'Нова властивість!';
+
+// Виведе всі властивості об'єкта, включаючи щойно додану
+obj.getInfo();
