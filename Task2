@@ -1,0 +1,14 @@
+function pad(str, symbol, length, addToStart) {
+    if (str.length >= length) {
+        return str;
+    }
+
+    const paddingLength = length - str.length;
+    const padding = symbol.repeat(Math.ceil(paddingLength / symbol.length)).substring(0, paddingLength);
+
+    return addToStart ? padding + str : str + padding;
+}
+
+// Приклад використання
+console.log(pad('qwerty', '+', 10, true)); // Поверне "++++qwerty"
+console.log(pad('qwerty', '+', 10, false)); // Поверне "qwerty++++"
